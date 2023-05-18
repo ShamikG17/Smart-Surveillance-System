@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script></head>
+    <!-- <script src="{{url_for('static', filename='scripts/file.js')}}"></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weapon</title>
+</head>
+<body>
+    <div class="main-container">
+		<div class="back-btn"><a href="/"><button class="btn btn-primary"> Back</button></a></div>
+		<div class="upload">
+            
+            <div class="upload-card">
+                <h3 class="text-center">Upload Video</h3>
+                <hr>
+                
+                <div class="video-upload">
+                    <form action="weapon" method="POST">
+                        <input name="videoInput" type="file" id="videoInput" accept=".mp4" />
+                        <input type="text" value="" name="path" id="path" style="display: none"></input>
+                        <button type="submit">Upload</button>
+                      </form>
+                      <!-- <p>{{frames}}</p> -->
+                </div>
+            </div>
+            <!-- <canvas id="buyers" width="600" height="400"></canvas> -->
+
+			<!-- 		 -->
+            <!-- {% if video %}
+            <img src="{{url_for('static', filename='assets/' + video +'.gif')}}">	
+            {% endif %} -->
+            
+		</div>
+                    
+						<!-- <form method="POST">
+							<div class="form-group">
+								<label for="path">Select Video File:</label>
+								<input type="file" name="path" class="form-control-file" id="path">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block my-2">Upload</button>
+						</form> -->
+						<!-- <button onclick="showFileBox()" class="btn btn-success">Select Video</button> -->
+							<!-- <p>Select Video</p>
+
+						<input type="file" accept=".mp4" id="videoInput"></input>
+							<p id="filename"></p>
+						<form method='POST'>
+							<input type="text" value="" name="path" id="path" style="display: none"></input>
+							<button type="submit" id="ob_detect" class="btn btn-warning">Go!</button>
+						</form> -->
+                        
+    </div>
+</body>
+<script>
+    // document.getElementById('uploadForm').addEventListener('submit', function(event) {
+    //   event.preventDefault(); // Prevent the form from submitting
+
+    //   var fileInput = document.getElementById('videoInput');
+    //   var file = fileInput.files[0].name;
+    //   console.log(file)
+    //   document.getElementById("path").value = file 
+    //   if (file) {
+    //     var reader = new FileReader();
+    //     reader.onload = function(event) {
+    //       var videoElement = document.createElement('video');
+    //       videoElement.src = event.target.result;
+    //       videoElement.controls = true;
+    //       document.body.appendChild(videoElement);
+    //     };
+    //     reader.readAsDataURL(file);
+    //   }
+    // });
+  </script>
+</html>

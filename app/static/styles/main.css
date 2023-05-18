@@ -1,0 +1,47 @@
+.body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-container{
+    height:20%;
+    background-color: rgb(7, 7, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-body{
+    height: 80%;
+    background-color: rgb(32, 32, 124) ;
+    padding-top: 1rem;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(7, 7, 53) ;
+}
+
+.back-btn{
+    height: 20%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.upload{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.upload-card{
+    width: 500px;
+    height: 400px;
+    background-color: rgb(32, 32, 124) ;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
